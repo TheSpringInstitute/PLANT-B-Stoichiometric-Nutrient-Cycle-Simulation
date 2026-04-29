@@ -6,27 +6,32 @@ similar paradigms must be used to as a slow yet efficient regenerative backbone 
 collapse. By incorporating biotechnologies that enhance their regenerative capabilities, BLSS reduce reliance on external resources and promote self-sustainability, minimizing space waste and impacts to extraterrestrial environments—a feat translatable to conservation and sustainability
 efforts on Earth.       
 
-The current PLANT-B prototype is an unconventional adaptation of bioactive terrariums. The selected invertebrates—the white dwarf isopod (*Trichorhina tomentosa*) and the temperate white springtail (*Folsomia candida*)—are common fixtures in bioactive terrariums, serving as the 
-detritivoricclean up crow that break down waste like feces and mold. These detritivores will play an essential role in removing the leaf litter of the spreading earthmoss (*Physcomitrium patens*), the sole photosynthetic species in the terrarium. Both photosynthesis and decomposition 
+The current PLANT-B prototype is an unconventional adaptation of bioactive terrariums. The selected invertebrates—the white dwarf isopod (<i></i>Trichorhina tomentosa</i>) and the temperate white springtail (<i>Folsomia candida</i>)—are common fixtures in bioactive terrariums, serving as the 
+detritivoricclean up crow that break down waste like feces and mold. These detritivores will play an essential role in removing the leaf litter of the spreading earthmoss (<i>Physcomitrium patens</i>), the sole photosynthetic species in the terrarium. Both photosynthesis and decomposition 
 will feed into the terrarium's nutrient cycles, but design choices and the low-Earth space environment may impact this process. Soil will not be used in the final prototype to minimize payload weight; instead, the spreading earthmoss will grow on a substrate called Hygrolon. Soil microbes
 may be integrated into the terrarium ecosystem to mimic soil dynamics, however. Because of the low-Earth orbit, the organisms will also have to contend with microgravity and rapidly shifting 60-30 minute light dark cycles. This is anticipated to affect the circadian rhythm of all organisms
 and potentially impact the photosynthetic output of the spreading earthmoss, but it is difficult to preemptively quantify how this may impact the terrarium's nutrient cycles. These nutrient cycle simulations are a small but essential part of PLANT-B, as they will enable contributors to
 analyze the negative impacts of space on the terrarium ecosystem before launch.
 
 At present, the Global Biodiversity Information Facility (GBIF) is the only database whose data was able to be downloaded through a function; the European Soil Data Centre (ESDAC) and TRY Plant Trait Database required requests to be sent manually. GBIF data was required to find an area of
-habitat overlap for the three species to parse possible optimal soil nutrient concentrations for species coexistence. ESDAC datasets may also be analyzed to identify relevant soil microbes. Though the chosen species are model organisms for genomics, scientific literature on their role in ecological stoichiometry is almost nonexistent. To overcome this gap, several databases were parsed to find stoichiometric data for closely related species. Close relatives of *P. patens* were
-determined by looking at a phylogenetic tree produced by Rensing and company. No relevant information on *P. patens* was found in the TRY Plant Trait Database, so information on relevant plant traits like Ellenberg indicator values were requested for closely related species. 156 unique
-trait entries were returned. Stoichiometric information for the invertebrates was found through the StoichLife database; nitrogen data was found for a close relative of *T. tormentosa*, and nutrient data was found for *Folsomia fimetaria*, a close relative of *F. candida*. Additional
-literature reviews may be conducted to obtain additional numeric values for the simulation equations.
+habitat overlap for the three species to parse possible optimal soil nutrient concentrations for species coexistence. ESDAC datasets may also be analyzed to identify relevant soil microbes. Though the chosen species are model organisms for genomics, scientific literature on their role in 
+ecological stoichiometry is almost nonexistent. To overcome this gap, several databases were parsed to find stoichiometric data for closely related species. Close relatives of *P. patens* were determined by looking at a phylogenetic tree produced by Rensing and company. No relevant 
+information on <i>P. patens</i>i> was found in the TRY Plant Trait Database, so information on relevant plant traits like Ellenberg indicator values were requested for closely related species. 156 unique trait entries were returned. Stoichiometric information for the invertebrates was found 
+through the StoichLife database; nitrogen data was found for a close relative of <i>T. tormentosa<.i>, and nutrient data was found for <i>Folsomia fimetaria</i>i>, a close relative of <i>F. candida</i>.Additional literature reviews may be conducted to obtain additional numeric values for the
+simulation equations.
 
 The appropriate packages were imported, a repository was made on the host computer, and GBIF was logged into through Python. The species info was pulled from GBIF, which enabled the proper search result to be identified; only the dwarf white isopod inquiry had to use the second result,
 as the first search result had a limited number of observations. To avoid complications associated with requesting multiple species at once, three separate functions were created to download the observation data for each species. All three datasets were combined into a single dataframe,
 and observations without spatial coordinates were removed. The dataframe was converted to a geodataframe, and an hvPlot was created. The interactive nature of this plot enabled a suitable overlapping area with a low human population to be identified: the German-Polish-Czech border. A
 bounding box was created to correctly parse all observations in this area. A plot was created to show all species in the overlapping habitat.
 
-<img src="Plots/PLANT-B_Species_Border_Distribution_Plot.png" alt="A map showing all three PLANT-B in close proximity to each other near the German-Polish-Czech border.">
+<img src="Plots/PLANT-B_Species_Border_Distribution_Plot.png" alt="A map showing all three PLANT-B species in close proximity to each other near the German-Polish-Czech border.">
 
+A new directory was created to store the soil nutrient concentration and microbe data. ESDAC's LUCAS 2018 TOPSOIL dataset was received after sending in a request, and the zip file was manually moved to and unzipped in the newly created directory. A path was created to "LUCAS-SOIL-2018.csv,"
+and the CSV file was defined as a dataframe. All samples were subsetted to the previous bounding box, which revealed only one sample was taken in the study area. The nutrient concentrations of this soil sample were compared against each other when a bar chart was made.
 
+<img src="Plots/PLANT-B_Species_Overlapping_Habitat_Soil_Nutrient_Concentrations_Plot.png" alt="A bar chart showing organic carbon, nitrogen, phosphorus, and potassium concentrations in a soil sample taken in the Czech Republic, close to its border with Germany and Poland.">
+  
 Data Sources
 
-
+Orgiazzi, A., Ballabio, C., Panagos, P., Jones, A., & Fernández-Ugalde, O. (2017). LUCAS Soil, the largest expandable soil dataset for Europe: a review. *European Journal of Soil Science*, *69*(1), 140–153. https://doi.org/10.1111/ejss.12499
