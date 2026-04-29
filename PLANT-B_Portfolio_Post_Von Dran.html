@@ -28,10 +28,36 @@ bounding box was created to correctly parse all observations in this area. A plo
 <img src="Plots/PLANT-B_Species_Border_Distribution_Plot.png" alt="A map showing all three PLANT-B species in close proximity to each other near the German-Polish-Czech border.">
 
 A new directory was created to store the soil nutrient concentration and microbe data. ESDAC's LUCAS 2018 TOPSOIL dataset was received after sending in a request, and the zip file was manually moved to and unzipped in the newly created directory. A path was created to "LUCAS-SOIL-2018.csv,"
-and the CSV file was defined as a dataframe. All samples were subsetted to the previous bounding box, which revealed only one sample was taken in the study area. The nutrient concentrations of this soil sample were compared against each other when a bar chart was made.
+and the CSV file was defined as a dataframe. All samples were subsetted to the previous bounding box, which revealed only one sample was taken in the study area. The nutrient concentrations of this soil sample were compared against each other when a bar chart was made. 
 
 <img src="Plots/PLANT-B_Species_Overlapping_Habitat_Soil_Nutrient_Concentrations_Plot.png" alt="A bar chart showing organic carbon, nitrogen, phosphorus, and potassium concentrations in a soil sample taken in the Czech Republic, close to its border with Germany and Poland.">
-  
+
+The most striking feature of this soil sample is its low nitrogen content. Though Ellenberg indicator values suggest close relatives of <i>P. patens</i> prefer nitrogen deficient soils, those same values indicate <i>Physcomitrium</i> species prefer moderate to high levels of nitrogen
+in soil. Organic matter composed of organic carbon is also somewhat low, but it is more prevalent than nitrogen by a factor of 10, resulting in a C:N ratio of approximately 9.86:1; this may suggest rapid decomposition and net nitrogen mineralization, but this is difficult to confirm with 
+the low nitrogen levels. Phosphorus and potassium appear elevated compared to typical soil concentrations, which may cause additional stoichiometric imbalances. An environment of rapid decomposition does not seem conducive for a sustainable soil ecosystem, so subsequent analyses in 
+areas of high population are needed to compare nutrient concentration baselines in overlapping habitats.
+
 Data Sources
 
-Orgiazzi, A., Ballabio, C., Panagos, P., Jones, A., & Fernández-Ugalde, O. (2017). LUCAS Soil, the largest expandable soil dataset for Europe: a review. *European Journal of Soil Science*, *69*(1), 140–153. https://doi.org/10.1111/ejss.12499
+González, A. L., Merder, J., Andraczek, K., Brose, U., Filipiak, M., Harpole, W. S., Hillebrand, H., Jackson, M. C., Jochum, M., Leroux, S. J., Nessel, M. P., Onstein, R. E., Paseka, R., Perry, G. L. W., Rugenski, A., Sitters, J., Sperfeld, E., Striebel, M., Zandona, E., Aymes, J.-C., 
+Blanckaert, A., Bluhm, S. L., Doi, H., Eisenhauer, N., Farjalla, V. F., Hood, J., Kratina, P., Labonne, J., Lovelock, C. E., Moody, E. K., Mozsár, A., Nash, L., Pollierer, M. M., Potapov, A.,  Romero, G. Q., Roussel, J.-M., Scheu, S., Scheunemann, N., Seeber, J., Steinwandter, M., 
+Susanti, W. I., Tiunov, A., & Dézerald, O. (2025). StoichLife: A Global Dataset of Plant and Animal Elemental Content. <i>Scientific Data</i>, </i>12</i>(1). https://doi.org/10.1038/s41597-025-04852-w
+
+González, A. L., Merder, J., Andraczek, K., Brose, U., Filipiak, M., Harpole, W. S., Hillebrand, H., Jackson, M. C., Jochum, M., Leroux, S. J., Nessel, M. P., Onstein, R. E., Paseka, R., Perry, G. L. W., Rugenski, A., Sitters, J., Sperfeld, E., Striebel, M., Zandona, E., Aymes, J.-C., 
+Blanckaert, A., Bluhm, S. L., Doi, H., Eisenhauer, N., Farjalla, V. F., Hood, J., Kratina, P., Labonne, J., Lovelock, C. E., Moody, E. K., Mozsár, A., Nash, L., Pollierer, M. M., Potapov, A.,  Romero, G. Q., Roussel, J.-M., Scheu, S., Scheunemann, N., Seeber, J., Steinwandter, 
+M., Susanti, W. I., Tiunov, A., & Dézerald, O. (2025). StoichLife: A global database of plant and animal elemental content [Dataset]. <i>Dryad<i>. https://doi.org/10.5061/dryad.3tx95x6r2
+
+Kattge, J., Bönisch, G., Díaz, S., Lavorel, S., Prentice, I. C., Leadley, P., Tautenhahn, S., Werner, G. D. A., Aakala, T., Abedi, M., Acosta, A. T. R., Adamidis, G. C., Adamson, K., Aiba, M., Albert, C. H., Alcántara, J. M., Alcázar C., C., Aleixo, I., Ali, H., Amiaud, B., 
+  . . . van der Plas, A. L. D. (2020). TRY plant trait database – enhanced coverage and open access. <i>Global Change Biology</i>, <i>26</i>(1), 119–188. https://doi.org/10.1111/gcb.14904
+
+Labouyrie, M., Ballabio, C., Romero, F., Panagos, P., Jones, A., Schmid, M. W., Mikryukov, V., Dulya, O., Tedersoo, L., Bahram, M., Lugato, E., van der Heijden, M. G. A., & Orgiazzi, A. (2023). Patterns in soil microbial diversity across Europe. <i>Nature Communications</i>, 
+<i>14</i>(1), 3311. https://doi.org/10.1038/s41467-023-37937-4
+
+Orgiazzi, A., Ballabio, C., Panagos, P., Jones, A., & Fernández-Ugalde, O. (2017). LUCAS Soil, the largest expandable soil dataset for Europe: a review. <i>European Journal of Soil Science</i>i>, <i>69</i>i>(1), 140–153. https://doi.org/10.1111/ejss.12499
+
+Panagos P., Van Liedekerke M., Jones A., & Montanarella, L. (2012). European Soil Data Centre: Response to European policy support and public data requirements. <i>Land Use Policy</i>, <i>29</i>(2), 329-338. https://doi.org/10.1016/j.landusepol.2011.07.003
+
+Panagos, P., Van Liedekerke, M., Borrelli, P., Köninger, J., Ballabio, C., Orgiazzi, A., Lugato, E., Liakos, L., Hervas, J., Jones, A., & Montanarella, L. (2022). European Soil Data Centre 2.0: Soil data and knowledge in support of the EU policies. <i> European Journal of Soil 
+Science</i>, <i>73</i>(6), e13315. https://doi.org/10.1111/ejss.13315
+
+Rensing, S. A., Goffinet, B., Meyberg, R., Wu, S.-Z., & Bezanilla, M. (2020). The Moss <i>Physcomitrium</i> (<i>Physcomitrella</i>) <i>patens</i>: A Model Organism for Non-Seed Plants. <i>The Plant Cell</i>, <i>32</i>(5), 1361–1376. https://doi.org/10.1105/tpc.19.00828
