@@ -1,9 +1,16 @@
-## Background
+### Simulation of Stoichiometric Nutrient Cycles for the PLANT-B CubeSat Terrarium Mission
+## Project Background
 This is a repository by Livian Von Dran, one of the entomologists for the PLANT-B CubeSat Terrarium Mission. Livian is making this repository as part of their final project for their Professional Graduate Certificate in Earth Data Analytics program. 
 
-The PLANT-B CubeSat Terrarium Mission is an initiative by The Spring Institute for Forests on the Moon to send a bioactive terrarium into low-Earth orbit for two to five years. In an effort to support The Spring Insitite's mission of creating a self-sustaining terrarium ecosystem that can function in space without outside intervention, this repository was created to simulate stoichiometric nutrient cycles occurring inside the PLANT-B terrarium.  This project is divided into two parts: habitat mapping and nutrient cycle simulation. Mapping spatiotemporal data is a requirement for the final project, so mapping has been performed to identify an area of habitat overlap near the German-Polish-Czech border. Determination of optimal soil nutrient concentration for PLANT-B's species is pending due to limited soil samples taken in the habitat area. A literature review is also being undertaken to find missing stoichiometric data.
+The PLANT-B CubeSat Terrarium Mission is an initiative by The Spring Institute for Forests on the Moon to send a bioactive terrarium into low-Earth orbit for two to five years. In an effort to support The Spring Insitite's mission of creating a self-sustaining terrarium ecosystem that can function in space without outside intervention, this repository was created to simulate stoichiometric nutrient cycles occurring inside the PLANT-B terrarium. The PLANT-B project is unique in that it is one of the first attempts to maintain a self-sustaining, Earth-like ecosystem directly in the space environment; experiments involving terrariums have been conducted inside the International Space Station, but no such experiments have occurred on a satellite.
+
+
+
+This project is divided into two parts: habitat mapping and nutrient cycle simulation. Mapping spatiotemporal data is a requirement for the final project, so mapping has been performed to identify an area of habitat overlap near the German-Polish-Czech border. Determination of optimal soil nutrient concentration for PLANT-B's species is pending due to limited soil samples taken in the habitat area. A literature review is also being undertaken to find missing stoichiometric data.
 
 Please feel free to use any data generated in this repository as needed. If you feel that changes need to be made to the repository to better suit the PLANT-B mission, email Livian at lvondran23@gmail.com with your suggestions or create a fork of this repository.
+
+## Data Background
 
 ## DOI
 This repository is private, but a DOI was made for a public mirror of it to comply with school project requirements: https://doi.org/10.5281/zenodo.19963779 A fully public release of the finalized repository may be made at the discretion of The Spring Institute. 
