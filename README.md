@@ -8,8 +8,6 @@ The PLANT-B CubeSat Terrarium Mission is an initiative by The Spring Institute f
 
 The influence of low-Earth orbit will pose multiple challenges to the terrarium's inhabitants. The orbital path dictates that the sealed ecosystem will be subject to rapidly shifting 60-30 minute light-dark cycles—similar to the daylight cycle occupants of the ISS experience. The primary producer candidate for the mission is *Physcomitrium patens*, a moss species whose spores have shown a remarkable tolerance to the space environment. Unfortunately, this tolerance has its limits; the light cycle is anticipated to negatively impact the circadian rhythms of all organisms in the terrarium, and as a C3 photosynthetic producer, *P. patens* will likely struggle with the limited exposure of the "daylight" windows. 
 
-Please feel free to use any data generated in this repository as needed. If you feel that changes need to be made to the repository to better suit the PLANT-B mission, email Livian at lvondran23@gmail.com with your suggestions or create a fork of this repository.
-
 ## Data Background
 
 This project is divided into two parts: habitat mapping and nutrient cycle simulation. Mapping spatiotemporal data is a requirement for the final project, so mapping has been performed to identify an area of habitat overlap near the German-Polish-Czech border. Determination of optimal soil nutrient concentration for PLANT-B's species is pending due to limited soil samples taken in the habitat area. A literature review is also being undertaken to find missing stoichiometric data.
@@ -65,7 +63,7 @@ This repository's data was originally processed in the earth-analytics-python en
 
 6. Download and run the [Visual Studio Code installer](https://code.visualstudio.com/download). The created Python environment is accessible when ipynb files are opened in VS Code.
 
-
+## Data Disclaimer
 
 
 
