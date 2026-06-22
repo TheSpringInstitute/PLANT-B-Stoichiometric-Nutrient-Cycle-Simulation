@@ -85,7 +85,7 @@ The first notebook that should be run is "part-1-gauging-habitat-nutrient-levels
 The second notebook that should be run is "part-2-simulating-nutrient-cycles.ipynb." The purpose of this notebook is to construct stoichiometric chemical equations and model the nutrient cycles inside the terrarium. This notebook is still under construction because some stoichiometry data is still missing. The stoichiometry data for the invertebrates can be found in the StoichLife dataset at https://datadryad.org/dataset/doi:10.5061/dryad.3tx95x6r2.
 
 ## DOI and Licensing
-This repository is private, but a DOI was made for a public mirror of it to comply with school project requirements: 10.5281/zenodo.20789672. A fully public release of the finalized repository may be made at the discretion of The Spring Institute. 
+This repository is private, but a DOI was made for a public mirror of it to comply with school project requirements: [10.5281/zenodo.20789672](10.5281/zenodo.20789672). A fully public release of the finalized repository may be made at the discretion of The Spring Institute. 
 
 Under the Creative Commons Attribution-NoDerivatives (CC BY-ND) license, redistribution, replication, or alteration of the source code is strictly forbidden.
 
