@@ -1,2 +1,16 @@
+# Avoid repository bloat
 .ipynb_checkpoints
-.DS_Store
+
+# Do not store login credentials
+.env
+.env.local
+*.key
+*.pem
+
+# Avoid storing unneeded data files
+data/
+*.cpg
+*.dbf
+*.ini
+*.prj
+*.shx
