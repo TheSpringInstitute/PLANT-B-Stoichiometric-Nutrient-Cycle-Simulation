@@ -18,11 +18,11 @@ When conducting space experiments with biological organisms, a great degree of u
 
 <ins>Gathering Data for the Simulations</ins>
 
-
+To simulate carbon and nitrogen cycles, soil nutrient concentrations need to be known. To identify an appropriate area to take data from, observation data of *P. patens*, *T. tomentosa*, and *F. candida* was taken from the Global Biodiversity Information Facility (GBIF) and mapped out. This interactive map was used to identify an appropriate area of habitat overlap around the German-Polish-Czech border.
 
 ![PLANT-B species distribution near the German-Polish-Czech border.](https://github.com/TheSpringInstitute/PLANT-B-Stoichiometric-Nutrient-Cycle-Simulation/blob/main/plots/PLANT-B_Species_Border_Distribution.png)
 
-
+To gather soil nutrient data for the overlap area, a request was submitted to the the European Soil Data Centre (ESDAC) for the LUCAS 2018 TOPSOIL data. When data within the set bounding box was examined, only one relevant soil sample was found. This soil sample yielded a C:N ratio of 9.86:1, indicating an environment where decomposition will occur very rapidly. 
 
 ![Carbon and nitrogen concentrations in a soil sample in the overlapping habitat area.](https://github.com/TheSpringInstitute/PLANT-B-Stoichiometric-Nutrient-Cycle-Simulation/blob/main/plots/PLANT-B_Species_Overlapping_Habitat_OC_and_N_Concentrations_Plot.png)
 
@@ -32,6 +32,8 @@ When conducting space experiments with biological organisms, a great degree of u
 
 
 <ins>Analyzing and Discussing the Results</ins>
+
+<ins>What Needs to be Done from Here?</ins>
 
 <ins>References</ins>
 
