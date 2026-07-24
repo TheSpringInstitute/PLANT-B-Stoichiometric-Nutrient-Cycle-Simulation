@@ -89,6 +89,6 @@ dependencies:
   - pycomo
   - pysd
 
-  - pip
+  - pip:
     - pygbif
     - tellurium
